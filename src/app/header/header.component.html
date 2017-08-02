@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-md-12 hdr">
+<button type="button" class="btn btn-default k1" aria-label="Left Align" (click)="Show = !Show"> 
+   <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span> 
+</button>
+  </div>
+</div>
+ <div class="col-md-2 side" *ngIf="Show">
+  <ul class="list-group" >
+    <li class="list-group-item" (click)="sender('boy.svg')">new</li>
+    <li class="list-group-item">new</li>
+    <li class="list-group-item">new</li>
+    <li class="list-group-item">new</li>
+    <li class="list-group-item">new</li>
+  </ul>
+  </div>

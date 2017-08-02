@@ -1,0 +1,22 @@
+.hdr{
+    height: 50px;
+    background-color: red;
+}
+.k1{
+    margin-top: 7px;
+    margin-left: 7px;
+}
+li{
+    background-color:darkgray;
+    color:white;
+}
+ul li:hover{
+    margin-top: 7px;
+    margin-left: 7px;
+color: red;
+cursor: pointer;
+cursor: hand;
+}
+.side{
+    margin-left: -9px;
+}
