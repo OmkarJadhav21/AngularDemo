@@ -6,6 +6,8 @@ import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 import { FormsModule } from '@angular/forms';
 import { BindingComponent } from './binding/binding.component';
+import { InterCompCommuComponent } from './binding/inter-comp-commu.component';
+
 
 @NgModule({
   declarations: [
@@ -13,6 +15,8 @@ import { BindingComponent } from './binding/binding.component';
     HeaderComponent,
     MainComponent,
     BindingComponent,
+    InterCompCommuComponent,
+  
    
   ],
   imports: [
