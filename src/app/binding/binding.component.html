@@ -61,7 +61,7 @@
 </div>
 <hr>
   
-<div [class.well]="isHide">
+<div [class.well]="isHide"[style.border]="brd">
   <input type="button" class=" btn btn-danger" value="red"(click)="brd='3px solid red'">
   <input type="button"class="btn btn-cyan"value="cyan"(click)="brd='1px solid cyan'">
   <input type="button"class="btn btn-success"value="green"(click)="brd='3px solid green'">
@@ -70,3 +70,9 @@
 </div>
 <app-inter-comp-commu [isWork]="true"></app-inter-comp-commu>
 <app-inter-comp-commu [isWork]="false"></app-inter-comp-commu>
+<br>
+<div class="row">
+  <div class="col-md-12">
+    <h1>Content Projection</h1>
+<ng-content></ng-content>
+  </div>

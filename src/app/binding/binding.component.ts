@@ -9,7 +9,7 @@ export class BindingComponent implements OnInit {
 dt:String
 mytype='text';
 defineType="text"
-
+brd:String;
   constructor() {   }
 
   ngOnInit() {
