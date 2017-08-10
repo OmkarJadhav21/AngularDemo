@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, ContentChild } from '@angular/core';
 
 @Component({
   selector: 'app-binding',
@@ -11,9 +11,16 @@ dt:String
 mytype='text';
 defineType="text"
 brd:String;
+private nm:String;
+private nm1:String;
 
+@ViewChild('myLocal')
+private myLocal:ElementRef
 
-  constructor() {   }
+@ContentChild('FromAppCompo')
+private FromAppCompo:ElementRef
+
+constructor() {   }
 
   ngOnInit() {
   }
@@ -30,5 +37,10 @@ onTxt2(){
   else {
      this.defineType="text"}
 }
-   
+Vwchld(){
+this.nm=this.myLocal.nativeElement.value
+   }
+ContChld(){
+  this.nm1=this.FromAppCompo.nativeElement.value
+}
 }

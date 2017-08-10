@@ -75,21 +75,35 @@
 <div class="row">
   <div class="col-md-12">
     <h1>Content Projection</h1>
-<ng-content></ng-content>
+    <ng-content></ng-content>
   </div>
+   </div>
 <hr>
 
 <div class="row">
   <div class="col-md-12">
-    <h1>  Local References</h1>
-  </div>
-<hr>
-
-<div class="row">
-  <div class="col-md-12">
-    <input type="text" #myLocal>
-    <input type="button"class="btn btn-primary" (click)="nm=myLocal.value">{{nm}}
+    <h1>  Local References 9 Aug</h1>
   </div>
 </div>
 <hr>
+
+<div class="row">
+  <div class="col-md-12">
+    <input type="text" #myLocal />
+    <input type="button" class="btn btn-primary" (click)="nm=myLocal.value"/>{{nm}}
+    <input type="button"class="btn btn-danger" value="viewChild" (click)="Vwchld()">{{nm}}
+     <!-- <button class="btn btn-primary" (click)="Vwchld()"></button>{{nm}} -->
+      <input type="button"class="btn btn-warning" value="( ContnChild )-From contnt proj txt bx" (click)="ContChld()"/>{{nm1}} 
+    </div>
+</div>
+<hr>
+
+<div class="row">
+  <div class="col-md-12">
+    <h1> Hostbind and listen</h1>
+  </div>
+</div>
+<hr>
+
+
 
