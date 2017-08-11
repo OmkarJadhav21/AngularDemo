@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-md-12">
+   <h1> ngSwitch 11-Aug</h1>
+   ngIf ,ngSwitch and ngFor arethhe Structural Directives
+  </div>
+</div>
+
+ <div class="row">
+  <div class="col-md-12"[ngSwitch]="day">
+
+    <div class="well" *ngSwitchCase='1'>Monday</div>
+    <div class="well" *ngSwitchCase='2'>Tuesday</div>
+    <div class="well" *ngSwitchCase='3'>Wednesday</div>
+    <div class="well" *ngSwitchDefault>Enter valid input</div>   
+    
+    <input type="button" class="btn btn-primary" value="One" (click)="day=1">
+    <input type="button" class="btn btn-primary" value="Two" (click)="day=2">
+    <input type="button" class="btn btn-primary" value="Three" (click)="day=3"> 
+    <input type="button" class="btn btn-primary" value="Default" (click)="day=4"> 
+  </div> 
+</div>  
+<hr>

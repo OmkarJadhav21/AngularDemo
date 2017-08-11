@@ -1,8 +1,13 @@
-<!-- <header (imgEm)="imgVal=$event">  </header>
-<app-main [imgNm]="imgVal"></app-main>
-<app-binding>it is nothing but projecting the content from outside component...
-    and  written in between the component
-    <input type="text" #FromAppCompo>
-    <input type="button"class="btn btn-danger" value="Another ">
-</app-binding> -->
-<app-hostbind></app-hostbind>
+   
+ <header (imgEm)="imgVal=$event">  </header>
+     <app-main [imgNm]="imgVal"></app-main>
+    
+    <app-binding>
+         it is nothing but projecting the content from outside component...
+        and  written in between the component
+        <input type="text" #FromAppCompo>
+        <input type="button"class="btn btn-danger" value="Another "> 
+    </app-binding> 
+     <app-hostbind></app-hostbind> 
+     <app-struct-dirctv></app-struct-dirctv>
+     <custmDirctv></custmDirctv>

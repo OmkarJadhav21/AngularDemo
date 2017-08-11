@@ -1,14 +1,13 @@
 
 <div class="row">
   <div class="col-md-12">
-    <h2>2 way Binding
-    </h2>
+    <h2>2 way Binding</h2>
   </div>
 </div>
 
-  <div class="row">
+<div class="row">
   <div class="col-md-12">
-<input type="text"[(ngModel)]="nm" > {{nm}} 
+    <input type="text"[(ngModel)]="nm" > {{nm}} 
   </div>
 </div>
 <hr>
@@ -22,54 +21,39 @@
 <div class="row">
   <div class="col-md-12">
    <input type="text">
-   <input type="button"(click)="eventb()" value="date">{{dt}}
+   <input type="button"(click)="eventb()" value="date"/>{{dt}}
   </div>  
 </div>
 <hr >
 
 <div class="row"> 
   <div class="col-md-12">
-    <h1>Property binding
-    </h1>
+    <h1>Property binding</h1>
   </div>
 </div>  
 
 <div class="row">
-<div class="col-md-12">
- <input type="mytype"> <!--it will take the direct value of var mytype in ts -->
-   <input type="{{mytype}}">
-  <input type="button" (click)="onType()"><br>
-   <input type="button" (click)="onTxt()"><br>
+  <div class="col-md-12">
+    <input type="mytype"> <!--it will take the direct value of var mytype in ts -->
+    <input type="{{mytype}}">
+    <input type="button" (click)="onType()"><br>
+    <input type="button" (click)="onTxt()"><br>
     <input type="button" (click)="onType()"[value]='mytype'> <br> 
     <input type="{{defineType}}"(click)="onTxt2()" value="{{defineType}}">
   </div> 
 </div> 
 <hr>
 
-<div class="row">
-  <div class="col-md-6">
-    <h1>Show/Hide</h1>
-    <input type="text" *ngIf="show">
-    <input type="button"value="shhow with *ngif"(click)="show=!show">
-  </div>
-
-  <div [class.col-md-6]="xyz">
-    <div [class.well]="xyz">
-<input type="button"value="show without nngIf"(click)="xyz=!xyz">
-    </div>
-  </div>
-</div>
-<hr>
-  
 <div [class.well]="isHide"[style.border]="brd">
   <input type="button" class=" btn btn-danger" value="red"(click)="brd='3px solid red'">
   <input type="button"class="btn btn-cyan"value="cyan"(click)="brd='1px solid cyan'">
   <input type="button"class="btn btn-success"value="green"(click)="brd='3px solid green'">
   <input type="button"class="btn btn-primary"value="blue"(click)="brd='3px solid blue'">
-    <input type="button"class="btn"value="Visibility of well"(click)="isHide=!isHide">
+  <input type="button"class="btn"value="Visibility of well"(click)="isHide=!isHide">
 </div>
-<app-inter-comp-commu [isWork]="true"></app-inter-comp-commu>
-<app-inter-comp-commu [isWork]="false"></app-inter-comp-commu>
+
+ <app-inter-comp-commu [isWork]="true"></app-inter-comp-commu>
+<app-inter-comp-commu [isWork]="false"></app-inter-comp-commu> 
 <hr>
 
 <div class="row">
@@ -93,17 +77,28 @@
     <input type="button" class="btn btn-primary" (click)="nm=myLocal.value"/>{{nm}}
     <input type="button"class="btn btn-danger" value="viewChild" (click)="Vwchld()">{{nm}}
      <!-- <button class="btn btn-primary" (click)="Vwchld()"></button>{{nm}} -->
-      <input type="button"class="btn btn-warning" value="( ContnChild )-From contnt proj txt bx" (click)="ContChld()"/>{{nm1}} 
+    <input type="button"class="btn btn-warning" value="( ContnChild )-From contnt proj txt bx" (click)="ContChld()"/>{{nm1}} 
     </div>
 </div>
 <hr>
 
 <div class="row">
-  <div class="col-md-12">
-    <h1> Hostbind and listen</h1>
+  <div class="col-md-6">
+    <h1>*ngIf</h1>
+    <input type="text" *ngIf="show">
+    <input type="button"value="shhow with *ngif"(click)="show=!show">
+  </div>
+
+  <div [class.col-md-6]="xyz">
+    <div [class.well]="xyz">
+      <input type="button"value="show without nngIf"(click)="xyz=!xyz">
+    </div>
   </div>
 </div>
 <hr>
+  
+
+
 
 
 
