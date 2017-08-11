@@ -7,6 +7,8 @@ import { MainComponent } from './main/main.component';
 import { FormsModule } from '@angular/forms';
 import { BindingComponent } from './binding/binding.component';
 import { InterCompCommuComponent } from './binding/inter-comp-commu.component';
+import { HostbindComponent } from './hostbind/hostbind.component';
+import { HostDirDirective } from './hostbind/host-dir.directive';
 
 
 @NgModule({
@@ -16,6 +18,8 @@ import { InterCompCommuComponent } from './binding/inter-comp-commu.component';
     MainComponent,
     BindingComponent,
     InterCompCommuComponent,
+    HostbindComponent,
+    HostDirDirective,
   
    
   ],
