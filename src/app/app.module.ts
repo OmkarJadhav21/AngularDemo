@@ -13,6 +13,10 @@ import { CustmDirctvDirective } from './custm-strut-dirctv/custm-dirctv.directiv
 import { Ng2TableModule } from 'ng2-table/ng2-table';
 import { TableComponent } from './table/table.component';
 import { FormsModule } from '@angular/forms';
+import { StarRatingComponent } from './star-rating/star-rating.component';
+import { StarRatingModule } from 'angular-star-rating';
+import { RatingModule } from "ngx-rating";
+
 
 @NgModule({ 
   declarations: [
@@ -27,14 +31,17 @@ import { FormsModule } from '@angular/forms';
     CustmStrutDirctvComponent,
     CustmDirctvDirective,
     TableComponent,
+    StarRatingComponent,
    
   
    
   ],
   imports: [
     BrowserModule,
-     FormsModule,
+     FormsModule, 
      Ng2TableModule,
+     StarRatingModule,
+     RatingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

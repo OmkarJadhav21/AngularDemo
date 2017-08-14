@@ -1,0 +1,64 @@
+  <!-- <div class="row" *ngFor="let rat of reviews">
+    <div class="col-md-12" >
+      <div>  
+        {{rat.review}}
+      </div>
+      <rating [(ngModel)]="rat.rating" [max]="10"></rating>
+    <div class="pull-right"><b>{{rat.rating}}</b></div> 
+    </div>
+  </div> -->
+  
+  <div class="row" *ngFor="let rat of reviews ">
+    <div class="col-md-12" >  
+      <div>
+        <!-- regular rating -->
+        <div> You have given {{rat.rating}} stars</div>
+        <div>{{rat.review}}</div>
+        <rating [(ngModel)]="rat.rating"></rating>
+        <br/><br/>
+    
+        <!-- rating with 10 stars -->
+        <div>{{rat.review}}</div>
+        <rating [(ngModel)]="rat.rating"
+                [max]="10">
+        </rating>
+        <br/><br/>
+    
+        <!-- rating with custom icons -->
+        <div>{{rat.review}}</div>
+        <rating [(ngModel)]="rat.rating"
+                fullIcon="◆"
+                emptyIcon="◇">
+        </rating>
+        <br/><br/>
+    
+        <!-- rating readonly -->
+        <div>{{rat.review}}</div>
+        <rating [(ngModel)]="rat.rating"
+                [readonly]="true">
+        </rating>
+        <br/><br/>
+    
+        <!-- rating disabled -->
+        <div>{{rat.review}}</div>
+        <rating [(ngModel)]="rat.rating"
+                [disabled]="true">
+        </rating>
+        <br/><br/>
+    
+        <!-- rating required -->
+        <div>{{rat.review}}</div>
+        <rating [(ngModel)]="rat.rating"
+                [required]="true">
+        </rating>
+        <br/><br/>
+    
+        <!-- rating with half stars -->
+        <div>{{rat.review}}</div>
+        <rating [(ngModel)]="rat.rating"
+                [float]="true">
+        </rating>
+        <br/><br/>
+      </div>  
+    </div>  
+  </div>
