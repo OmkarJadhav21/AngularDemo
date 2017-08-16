@@ -11,7 +11,7 @@ export class StarRatingComponent implements OnInit {
   }
 
 reviews=[ {rating:5,review:`Excellent`},
-          {rating:4,review:`It si repeating twice beacause i use two values in array`}
+          {rating:4,review:`It is repeating twice beacause i use two values in array`}
 ];
   constructor(){
   }

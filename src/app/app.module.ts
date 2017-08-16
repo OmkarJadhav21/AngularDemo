@@ -16,6 +16,9 @@ import { FormsModule } from '@angular/forms';
 import { StarRatingComponent } from './star-rating/star-rating.component';
 import { StarRatingModule } from 'angular-star-rating';
 import { RatingModule } from "ngx-rating";
+import { LifcycleComponent } from './lifcycle/lifcycle.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { NgProgressModule } from 'ng2-progressbar';
 
 
 @NgModule({ 
@@ -32,6 +35,8 @@ import { RatingModule } from "ngx-rating";
     CustmDirctvDirective,
     TableComponent,
     StarRatingComponent,
+    LifcycleComponent,
+    ProgressBarComponent,
    
   
    
@@ -41,7 +46,8 @@ import { RatingModule } from "ngx-rating";
      FormsModule, 
      Ng2TableModule,
      StarRatingModule,
-     RatingModule
+     RatingModule,
+     NgProgressModule
   ],
   providers: [],
   bootstrap: [AppComponent]
