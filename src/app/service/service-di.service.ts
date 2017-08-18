@@ -12,10 +12,27 @@ export class ServiceDIService {
 
 
 newf(){
-this.em.emit( `${new Date().toString()}`)
+
+this.nm=new Date();
 
 }
 
+newf2(){
+  this.em.emit( {
+    date :`${new Date().toString()}`, 
+    day :`monday`
+  })
+}
+
+
+
+dtlistner(callback:any){
+  this.em.subscribe(s =>{
+    callback(s);
+  })
+
+
+}
 
 
 }

@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,OnChanges } from '@angular/core';
 import { ServiceDIService } from './service-di.service';
-
 
 
 @Component({
@@ -13,6 +12,7 @@ export class ServiceComponent implements OnInit {
 
 private dt:any
 private xy:any
+r;
 
   constructor(
     private ser:ServiceDIService
@@ -20,13 +20,25 @@ private xy:any
 
   ngOnInit() {
     // this.dt="valse"
-    this.dt=this.ser.nm
+  // this.xy=this.ser.nm;
+
+    this.ser.dtlistner(r => {
+      //console.log(dt);
+      this.r = r.date,
+      this.dt=r.day
+    });
  
   }
 
+  onclick2(){
+this.ser.newf2();
+  }
+  
+
   onclick(){
     //this.ser.np=new Date()
-this.ser.newf();  
+this.ser.newf(); 
+this.xy=this.ser.nm; 
   }
 
 }
