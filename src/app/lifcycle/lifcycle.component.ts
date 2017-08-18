@@ -28,12 +28,8 @@ OnDestroy {
   ngOnInit() {
     this.l('ngOnInit')
   }
-
-  ngOnDestroy() {
-    this.l('ngOnDestroy')
-  }
-
-  ngOnChanges() {
+  
+   ngOnChanges() {
     this.l('ngOnChanges')
   }
  
@@ -58,7 +54,9 @@ OnDestroy {
     this.l('ngDoCheck')
   }
 
-
+  ngOnDestroy() {
+    this.l('ngOnDestroy')
+  }
   constructor() { }
 
   onDt(){

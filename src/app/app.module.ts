@@ -19,6 +19,7 @@ import { RatingModule } from "ngx-rating";
 import { LifcycleComponent } from './lifcycle/lifcycle.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { NgProgressModule } from 'ng2-progressbar';
+import { ServiceComponent } from './service/service.component';
 
 
 @NgModule({ 
@@ -37,6 +38,7 @@ import { NgProgressModule } from 'ng2-progressbar';
     StarRatingComponent,
     LifcycleComponent,
     ProgressBarComponent,
+    ServiceComponent,
    
   
    

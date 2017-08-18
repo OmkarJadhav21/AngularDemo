@@ -1,8 +1,7 @@
    
- <header (imgEm)="imgVal=$event">  </header>
+ <!-- <header (imgEm)="imgVal=$event">  </header>
      <app-main [imgNm]="imgVal"></app-main>
-    
-    <app-binding>
+        <app-binding>
          it is nothing but projecting the content from outside component...
         and  written in between the component
         <input type="text" #FromAppCompo>
@@ -12,6 +11,8 @@
      <app-struct-dirctv></app-struct-dirctv>
      <custmDirctv></custmDirctv>
      <app-table></app-table>
-     <app-star-rating></app-star-rating>
-     <app-lifcycle></app-lifcycle>
-
+     <app-star-rating></app-star-rating> -->
+     <app-lifcycle *ngIf="work"></app-lifcycle>
+     <input type="button"class="btn btn-primary" value="Destroy" (click)="work=!work"/>
+     <app-service></app-service>   
+     <app-service></app-service>  
