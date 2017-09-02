@@ -8,12 +8,19 @@
         <input type="button"class="btn btn-danger" value="Another "> 
     </app-binding> 
      <app-hostbind></app-hostbind> 
+
+    <div class="row">
+        <div class="col-md-4 square"[Magic]></div>
+        <div class="col-md-4 square"[Magic]></div>
+        <div class="col-md-4 square"[Magic]></div>
+    </div>
      <app-struct-dirctv></app-struct-dirctv>
      <custmDirctv></custmDirctv>
      <app-table></app-table>
      <app-star-rating></app-star-rating> -->
      <app-lifcycle *ngIf="work"></app-lifcycle>
      <input type="button"class="btn btn-primary" value="Destroy" (click)="work=!work"/>
-  
      <app-service></app-service>  
      <app-service></app-service>  
+
+

@@ -20,6 +20,7 @@ import { LifcycleComponent } from './lifcycle/lifcycle.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { NgProgressModule } from 'ng2-progressbar';
 import { ServiceComponent } from './service/service.component';
+import { MagicDirective } from './magic.directive';
 
 
 @NgModule({ 
@@ -39,9 +40,8 @@ import { ServiceComponent } from './service/service.component';
     LifcycleComponent,
     ProgressBarComponent,
     ServiceComponent,
-   
-  
-   
+    MagicDirective,
+      
   ],
   imports: [
     BrowserModule,
