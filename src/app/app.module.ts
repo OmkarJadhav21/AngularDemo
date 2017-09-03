@@ -21,6 +21,9 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { NgProgressModule } from 'ng2-progressbar';
 import { ServiceComponent } from './service/service.component';
 import { MagicDirective } from './magic.directive';
+import { FacebookComponent } from './service/facebook.component';
+import { InstaComponent } from './service/insta.component';
+import { WebserviceService } from "./service/webservice.service";
 
 
 @NgModule({ 
@@ -41,6 +44,9 @@ import { MagicDirective } from './magic.directive';
     ProgressBarComponent,
     ServiceComponent,
     MagicDirective,
+    FacebookComponent,
+    InstaComponent,
+   
       
   ],
   imports: [
@@ -51,7 +57,7 @@ import { MagicDirective } from './magic.directive';
      RatingModule,
      NgProgressModule
   ],
-  providers: [],
+  providers: [WebserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
